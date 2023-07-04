@@ -1,0 +1,36 @@
+/* Import black7375 Firefox UI fit Lepton style*/
+@import url("css/leptonChrome.css");
+/* Import Free Firefox Onebar style */
+@import url("css/onebarChrome.css");
+
+/* Enable option to edit bookmark URLs under Add Bookmark (blue star) menu */
+/*
+ * #editBMPanel_locationRow {
+ *   visibility: visible !important;
+ * }
+*/
+
+/* Disable Email Image/Audio/Video and Set as Desktop Background context menu items */
+/*
+ * #context-sendimage,
+ * #context-sendvideo,
+ * #context-sendaudio,
+ * #context-setDesktopBackground {
+ *   display: none !important;
+ * }
+*/
+
+/* My custom changes */
+/* I don't know what I'm doing at all, I'm just winging it */
+
+/* Increase the URL bar size */
+:root {
+    --urlbar-collapsed-width: 250px;
+    --urlbar-open-width: 350px;
+}
+
+/* Fix the URL url to add padding on the right to make it symmetrical. This also allows you to see the entire URL now */
+/* Value needs to change if --urlbar-open-width value changed */
+.urlbar-input-box {
+    padding-right: 5.2em !important;
+}
