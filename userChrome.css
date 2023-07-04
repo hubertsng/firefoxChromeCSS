@@ -30,7 +30,9 @@
 }
 
 /* Fix the URL url to add padding on the right to make it symmetrical. This also allows you to see the entire URL now */
-/* Value needs to change if --urlbar-open-width value changed */
-.urlbar-input-box {
-    padding-right: 5.2em !important;
+/* Value needs to change if --urlbar-open-width value changed possibly */
+/* I have just a smidgen of an idea of how this works but you know, I got it to work so whatever. */
+#urlbar-container:focus-within .urlbar-input-box,
+.urlbar-input-box#urlbar-container:focus-within {
+    padding-right: 5.2em !important
 }
